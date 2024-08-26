@@ -8,11 +8,13 @@ import webbrowser as browser
 #from gtts import gTTS
 #from playsound import playsound
 from datetime import datetime
+from flask import Flask, jsonify, request
 import time as t
 #from bs4 import BeautifulSoup
 import requests as r
 #from translate import Translator
 
+app = Flask(__name__)
 
 def monitora_prompt():
     print('Sou o Netuno, como posso te ajudar hoje?')
